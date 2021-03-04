@@ -1412,10 +1412,19 @@
         margin-right: 25px;
     }
 
+    .header__logo a img {
+        max-width: 130px;
+    }
 
+    .mainslider .slick-arrow.slick-next,
+    .mainslider .slick-arrow.slick-prev,
+    .collections__box-title a {
+        font-size: 14px;
+    }
 
-
-
+    .footer__logo a {
+        max-width: 160px;
+    }
 
 }
 

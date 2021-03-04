@@ -22,13 +22,17 @@ $(document).ready(function () {
         infinite: true,
         speed: 500,
         prevArrow: '<button type="button" class="slick-prev">Prev</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 400
     });
 
 
     // Slider - About
 
-    // main slider
     var $statusab = $('.about-section .pagingInfo');
     var $slickElementab = $('.aboutslider');
 
@@ -48,7 +52,12 @@ $(document).ready(function () {
         infinite: true,
         speed: 500,
         prevArrow: '<button type="button" class="slick-prev">Prev</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 1200
     });
 
     // About mouse transform
