@@ -1492,8 +1492,16 @@ header.header {
     position: relative;
 }
 
-.product-block .picwrap:hover {
-    box-shadow: 2px 2px 10px #c7d2e4;
+.product-block .picwrap img {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.product-block .picwrap:hover img {
+    opacity: .80;
 }
 
 .product-block .picwrap img {
@@ -1706,6 +1714,7 @@ header.header {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 2;
 }
 
 .prodlabel.grey {

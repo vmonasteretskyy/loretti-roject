@@ -1722,7 +1722,9 @@
         padding-left: 0;
     }
 
-
+    .sort-section .sort__count {
+        display: none;
+    }
 
 
 
