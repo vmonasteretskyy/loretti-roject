@@ -85,6 +85,12 @@ $(document).ready(function () {
         minimumResultsForSearch: -1
     });
 
+    $(".sort__tag select").select2({
+        minimumResultsForSearch: -1,
+        containerCssClass: "error",
+        dropdownCssClass: "catalog-dropdown",
+    });
+
     // menu
     var newDiv = document.createElement('div');
     newDiv.setAttribute('class', 'menubg');
@@ -101,5 +107,29 @@ $(document).ready(function () {
         $('.menubg').removeClass('open')
     });
 
+    // FIlter - left sidebar
+    $('.cattitle').click(function () {
+        $(this).toggleClass('rotate-arrow');
+        $(this).siblings('.submenu-cat').slideToggle();
+    });
+
+    // HIDE filters
+    $('.hide-filters').click(function () {
+        $(this).toggleClass('showf-text');
+        $('.filters-col').toggle();
+    });
+
+    // catalog colums
+    $('.sort-col2').click(function () {
+        $('.sort__col span').removeClass('active');
+        $(this).addClass('active');
+        $('.catalog-imgblocks').addClass('two-col');
+    });
+
+    $('.sort-col3').click(function () {
+        $('.sort__col span').removeClass('active');
+        $(this).addClass('active');
+        $('.catalog-imgblocks').removeClass('two-col');
+    });
 
 });

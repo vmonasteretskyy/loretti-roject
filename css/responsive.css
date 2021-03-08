@@ -248,6 +248,141 @@
         line-height: normal;
     }
 
+    .catalog__header .hide-filters {
+        padding: 3px 20px;
+    }
+
+    .catalog__header .hide-filters img {
+        margin-top: -5px;
+    }
+
+    .sort__count .cvar ul li:after {
+        width: 6px;
+        height: 6px;
+        bottom: -6px;
+    }
+
+    .sort__count .cvar ul li {
+        margin-right: 20px;
+    }
+
+    .sort-section .sort__count {
+        max-width: 265px;
+        flex: 0 0 265px;
+    }
+
+    .sort__tag .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+    }
+
+    .catalog-dropdown .select2-results__option {
+        font-size: 16px;
+    }
+
+    .sort__tag .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        border-width: 6px 7px 0 7px;
+    }
+
+    .sort__tag {
+        max-width: 225px;
+        flex: 0 0 225px;
+    }
+
+    .sort__col span {
+        width: 28px;
+    }
+
+    .sort__col {
+        width: 100%;
+        max-width: 75px;
+    }
+
+    .sort__tag {
+        margin-right: 50px;
+    }
+
+    .sort__tag .select-wrapper {
+        width: 120px;
+    }
+
+    .filter-sidebar>ul>li>span {
+        padding: 5px 20px;
+        height: 60px;
+    }
+
+    .filter-sidebar>ul>li>span::after {
+        width: 12px;
+    }
+
+    .submenu-cat {
+        padding: 0px 25px 10px 30px;
+    }
+
+    .product-block .title {
+        font-size: 16px;
+    }
+
+    .product-block .title {
+        padding: 10px 5px 0 5px;
+    }
+
+    .pagination ul li.active a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pagination ul li {
+        margin-right: 20px;
+    }
+
+    .catalog-section .blackbtn.transparent {
+        width: 280px;
+        height: 55px;
+    }
+
+    .catalog-section .bottom-navigation {
+        margin-top: 15px;
+    }
+
+    .prodlabel {
+        font-size: 16px;
+        width: 140px;
+        height: 36px;
+        letter-spacing: 0.10em;
+    }
+
+    .filter-sidebar>ul>li>span::after {
+        right: 15px;
+    }
+
+    .filter-sidebar>ul>li>span {
+        padding-right: 25px;
+    }
+
+    .active-filtbox {
+        padding: 5px 20px;
+        height: 60px;
+    }
+
+    .active-filtbox button {
+        width: 24px;
+    }
+
+    .active-filters__list {
+        margin-bottom: 25px;
+    }
+
+    .clear .blackbtn {
+        width: 190px;
+        height: 50px;
+    }
+
+    .active-filters .title {
+        padding-left: 20px;
+    }
+
+
+
 
     .events__tablebody .ev,
     .about-section .title,
@@ -257,7 +392,10 @@
 
     .pagingInfo,
     .events__tablehead p,
-    .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+    .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .filter-sidebar>ul>li>span,
+    .active-filtbox .filter-title,
+    .active-filters .title {
         font-size: 18px;
     }
 
@@ -273,7 +411,13 @@
     .find-store .inftext,
     .footer__title,
     .footer__menu li a,
-    .footer__contacts ul li a {
+    .footer__contacts ul li a,
+    .breadcrumbs ul li,
+    .breadcrumbs ul li a,
+    .catalog__header .hide-filters,
+    .title-sort,
+    .sort__count .cvar ul li a,
+    .pagination ul li a {
         font-size: 16px;
     }
 
@@ -563,6 +707,57 @@
         font-size: 14px;
     }
 
+    .catalog__header .hide-filters img {
+        margin-right: 5px;
+    }
+
+    .sort__tag {
+        margin-right: 30px;
+    }
+
+    .sort__col {
+        max-width: 70px;
+    }
+
+    .sort__tag {
+        max-width: 210px;
+        flex: 0 0 210px;
+    }
+
+    .sort__count .cvar ul li {
+        margin-right: 15px;
+    }
+
+    .sort-section .sort__count {
+        max-width: 240px;
+        flex: 0 0 240px;
+    }
+
+    .breadcrumbs {
+        margin: 140px 0 65px 0;
+    }
+
+    .filter-sidebar>ul>li>span {
+        font-size: 16px;
+    }
+
+    .filter-sidebar>ul>li>span::after {
+        right: 0;
+    }
+
+    .catalog-section .blackbtn.transparent {
+        width: 220px;
+        height: 48px;
+    }
+
+    .pagination ul li.active a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .active-filtbox .filter-title {
+        font-size: 16px;
+    }
 
 
 
@@ -1049,6 +1244,67 @@
     .abslwrapp .pagingInfo {
         right: 0;
     }
+
+    .catalog__header .hide-filters {
+        padding: 0;
+    }
+
+    .sort-section {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .sort-section .sort__count,
+    .sort__tag {
+        margin: 0;
+    }
+
+    .catalog__header {
+        margin-bottom: 10px;
+    }
+
+    .filters-col {
+        display: none;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 40px;
+    }
+
+    .hfbtn {
+        display: none;
+    }
+
+    .sfbtn {
+        display: inline-block;
+    }
+
+    .showf-text .hfbtn {
+        display: inline-block;
+    }
+
+    .showf-text .sfbtn {
+        display: none;
+    }
+
+    .header__menu ul li a:before {
+        bottom: initial;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: initial;
+        left: -15px;
+    }
+
+    .active-filters {
+        margin-bottom: 20px;
+        margin-top: 16px;
+    }
+
+
 }
 
 @media(max-width:767.8px) {
@@ -1196,6 +1452,10 @@
 
     .header__rightm.openmenu {
         overflow-y: auto;
+    }
+
+    .sort__col {
+        display: none;
     }
 
 }
@@ -1415,6 +1675,56 @@
     .header__logo a img {
         max-width: 130px;
     }
+
+    .sort-section {
+        flex-wrap: wrap;
+    }
+
+    .sort-section .sort__count,
+    .sort__tag {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .sort__count .cvar ul {
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sort__tag .select-wrapper {
+        width: 170px;
+        max-width: 170px;
+        flex: 0 0 170px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sort-section .sort__count {
+        margin-bottom: 15px;
+    }
+
+    .pagination ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .catalog-section .blackbtn.transparent {
+        margin: 0 auto;
+    }
+
+    .filter-sidebar>ul>li>span,
+    .active-filtbox,
+    .active-filters .title {
+        padding-left: 0;
+    }
+
+
+
+
 
     .mainslider .slick-arrow.slick-next,
     .mainslider .slick-arrow.slick-prev,
