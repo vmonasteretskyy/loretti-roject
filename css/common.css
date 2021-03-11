@@ -1252,7 +1252,9 @@ header.header {
 
 /* Breadcrumbs */
 .breadcrumbs {
-    margin: 175px 0 107px 0;
+    margin: 175px 0 0 0;
+    position: relative;
+    z-index: 2;
 }
 
 .breadcrumbs ul {
@@ -1292,6 +1294,10 @@ header.header {
 
 
 /* Catalog section */
+.catalog-section {
+    padding-top: 107px;
+}
+
 .catalog__header {
     min-height: 54px;
     padding-bottom: 18px;
@@ -1788,10 +1794,6 @@ header.header {
     margin-bottom: 45px;
 }
 
-
-
-
-
 /* Catalog section - END*/
 
 .header__blackline-nav.whbtn ul li.active a {
@@ -1803,11 +1805,105 @@ header.header {
 }
 
 
+/* EVENTS page */
+
+.events-section {
+    padding: 0 0 70px 0;
+    /* position: relative; */
+}
+
+.events-section:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #F1F1F1;
+    height: 425px;
+}
+
+.events-section .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+.page-title,
+h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #28282C;
+    font-size: 44px;
+    line-height: 88px;
+    margin: 0 0 138px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.page-title:after {
+    content: '';
+    display: inline-block;
+    background: #28282C;
+    width: 128px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    margin: 0 auto;
+}
+
+.event-fig {
+    position: absolute;
+    top: -60px;
+    margin: 0 auto;
+    display: block;
+    right: 0;
+    left: 0;
+}
+
+.events-section.events .events__filter {
+    padding-top: 30px;
+}
+
+.events-section.events .events__tablehead p,
+.events__tablebody .evbod-rowwrapp {
+    padding-left: 75px;
+}
+
+.events .bottom-navigation .blackbtn {
+    margin: 0;
+}
+
+.events .bottom-navigation {
+    margin-top: 78px;
+}
+
+.events-section.events .blackbtn.transparent {
+    width: 393px;
+    height: 64px;
+    max-width: 100%;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* EVENTS page - END*/
 
 
 

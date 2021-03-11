@@ -381,6 +381,42 @@
         padding-left: 20px;
     }
 
+    .page-title,
+    h1 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .events-section {
+        padding: 0 0 50px 0;
+    }
+
+    .event-fig {
+        width: 550px;
+    }
+
+    .event-fig {
+        top: -50px;
+    }
+
+    .events-section:before {
+        height: 385px;
+    }
+
+    .events-section.events .events__tablehead p,
+    .events__tablebody .evbod-rowwrapp {
+        padding-left: 45px;
+    }
+
+    .events-section.events .blackbtn.transparent {
+        width: 280px;
+        height: 55px;
+    }
+
+
+
+
+
 
 
 
@@ -734,7 +770,7 @@
     }
 
     .breadcrumbs {
-        margin: 140px 0 65px 0;
+        margin: 140px 0 0 0;
     }
 
     .filter-sidebar>ul>li>span {
@@ -758,6 +794,32 @@
     .active-filtbox .filter-title {
         font-size: 16px;
     }
+
+    .catalog-section {
+        padding-top: 65px;
+    }
+
+    .page-title,
+    h1 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .events-section:before {
+        height: 350px;
+    }
+
+    .events-section.events .blackbtn.transparent {
+        width: 220px;
+        height: 48px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -1268,7 +1330,11 @@
     }
 
     .breadcrumbs {
-        margin-bottom: 40px;
+        margin-bottom: 0;
+    }
+
+    .catalog-section {
+        padding-top: 40px;
     }
 
     .hfbtn {
@@ -1302,6 +1368,16 @@
     .active-filters {
         margin-bottom: 20px;
         margin-top: 16px;
+    }
+
+    .page-title,
+    h1 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .events-section {
+        padding-top: 0;
     }
 
 
@@ -1725,6 +1801,44 @@
     .sort-section .sort__count {
         display: none;
     }
+
+    .event-fig {
+        width: 300px;
+    }
+
+    .page-title,
+    h1 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .page-title:after,
+    .section-title:after {
+        width: 80px;
+        bottom: -10px;
+    }
+
+    .events-section {
+        padding-top: 20px;
+    }
+
+    .event-fig {
+        display: none;
+    }
+
+    .events-section:before {
+        display: none;
+    }
+
+    .events .bottom-navigation .blackbtn {
+        margin: 0 auto;
+    }
+
+
+
+
+
 
 
 
