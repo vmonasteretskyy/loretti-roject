@@ -1525,6 +1525,7 @@ header.header {
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
 }
 
 .product-block .picwrap:hover img {
