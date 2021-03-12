@@ -7,6 +7,21 @@
         height: 620px;
     }
 
+    .events__tablebody .contacts li a.mail {
+        word-break: break-all;
+    }
+
+    .about-section.abus .section-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .about-section.abus .title {
+        margin-bottom: 25px;
+    }
+
+    .about-section .descr ul {
+        margin-top: 20px;
+    }
 }
 
 @media(max-width:1600.8px) {
@@ -240,10 +255,6 @@
         max-width: 180px;
     }
 
-    .events__tablebody .contacts li a.mail {
-        word-break: break-all;
-    }
-
     .events__tablebody .contacts li a {
         line-height: normal;
     }
@@ -413,6 +424,38 @@
         height: 55px;
     }
 
+    .abus h1 {
+        margin-bottom: 100px;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p:before {
+        width: 60px;
+        height: 44px;
+        top: -44px;
+        padding-left: 60px;
+    }
+
+    .name_delf {
+        font-size: 18px;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .categ_item {
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -462,7 +505,6 @@
         padding: 100px 0 0 0;
     }
 }
-
 
 @media(max-width:1400.8px) {
     .container-fluid {
@@ -595,7 +637,6 @@
         padding: 100px 0 0 80px;
     }
 }
-
 
 @media(max-width:1199.8px) {
     .header__menu ul {
@@ -814,6 +855,9 @@
         height: 48px;
     }
 
+    .name_delf {
+        font-size: 16px;
+    }
 
 
 
@@ -1814,7 +1858,8 @@
     }
 
     .page-title:after,
-    .section-title:after {
+    .section-title:after,
+    h1:after {
         width: 80px;
         bottom: -10px;
     }
