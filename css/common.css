@@ -2156,7 +2156,9 @@ h1:after {
     padding-bottom: 100px;
 }
 
-
+.inform-sect1 .rightdescr .absect-descr p {
+    margin-bottom: 0;
+}
 
 
 

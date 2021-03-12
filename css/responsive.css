@@ -450,12 +450,51 @@
         margin-bottom: 30px;
     }
 
+    .inform-sect2 .description .title {
+        font-size: 24px;
+        line-height: 150%;
+        max-width: 800px;
+        margin-bottom: 40px;
+    }
 
+    .about-section .descr ul li {
+        padding-left: 20px;
+        margin-bottom: 5px;
+    }
 
+    .about-section .descr ul li:after {
+        top: 9px;
+    }
 
+    .about-section .descr ul {
+        padding-left: 15px;
+    }
 
+    .about-section.abus {
+        padding-bottom: 80px;
+    }
 
+    .inform-sect1,
+    .inform-sect2 {
+        padding-bottom: 120px;
+    }
 
+    .inform-sect2.pb100 {
+        padding-bottom: 70px;
+    }
+
+    .about-section.abus .section-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .about-section.abus .title {
+        margin-bottom: 20px;
+    }
+
+    .page-title:after,
+    h1:after {
+        bottom: -13px;
+    }
 
 
 
@@ -496,7 +535,9 @@
     .catalog__header .hide-filters,
     .title-sort,
     .sort__count .cvar ul li a,
-    .pagination ul li a {
+    .pagination ul li a,
+    .inform-sect2 .description .descrtext p,
+    .about-section .descr ul li {
         font-size: 16px;
     }
 
@@ -635,6 +676,14 @@
 
     .about-section {
         padding: 100px 0 0 80px;
+    }
+
+    .about-section.abus {
+        padding-bottom: 0;
+    }
+
+    .about-section .descr ul {
+        margin-bottom: 20px;
     }
 }
 
@@ -859,6 +908,39 @@
         font-size: 16px;
     }
 
+    .absect-left .bottbox {
+        padding-bottom: 50px;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p {
+        padding-left: 0;
+        font-size: 24px;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p:before {
+        width: 35px;
+        height: 28px;
+        top: -28px;
+        padding-left: 0;
+    }
+
+    .abus h1 {
+        margin-bottom: 70px;
+    }
+
+    .inform-sect1,
+    .inform-sect2 {
+        padding-bottom: 80px;
+    }
+
+    .inform-sect2 .description {
+        padding-left: 0;
+    }
+
+    .inform-sect2 .description .title {
+        font-size: 20px;
+        max-width: 700px;
+    }
 
 
 
@@ -1424,6 +1506,35 @@
         padding-top: 0;
     }
 
+    .page-title,
+    h1 {
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p {
+        font-size: 18px;
+    }
+
+    .inform-sect1 .rightdescr .absect-descr p:before {
+        width: 24px;
+        height: 19px;
+        top: -20px;
+    }
+
+    .inform-sect2 .description .descrtext:nth-child(2) p {
+        padding-left: 0;
+    }
+
+    .inform-sect2 .description .descrtext:first-child p {
+        padding-right: 0;
+    }
+
+    .abus h1 {
+        margin-bottom: 50px;
+    }
+
 
 }
 
@@ -1577,6 +1688,24 @@
     .sort__col {
         display: none;
     }
+
+    .inform-sect1 {
+        padding-right: 15px;
+    }
+
+    .inform-sect1,
+    .inform-sect2 {
+        padding-bottom: 50px;
+    }
+
+    .inform-sect2 .description .title {
+        margin-bottom: 20px;
+    }
+
+    .about-section.abus {
+        margin-bottom: 50px;
+    }
+
 
 }
 
@@ -1880,9 +2009,51 @@
         margin: 0 auto;
     }
 
+    .inform-sect1 .leftpic,
+    .inform-sect1 .rightdescr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .inform-sect1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .inform-sect1 .leftpic {
+        order: 2;
+    }
+
+    .inform-sect1 .rightdescr {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .absect-descr {
+        margin-top: 20px;
+    }
+
+    .container-fluid.abus {
+        margin-top: 20px;
+    }
+
+    .abus h1 {
+        margin-bottom: 30px;
+    }
+
+    .inform-sect2 .description .descrtext {
+        margin-bottom: 20px;
+    }
+
+    .inform-sect2.pb100 {
+        padding-bottom: 0;
+    }
 
 
-
+    .inform-sect1,
+    .inform-sect2 {
+        padding-bottom: 30px;
+    }
 
 
 
