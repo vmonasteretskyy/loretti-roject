@@ -132,4 +132,31 @@ $(document).ready(function () {
         $('.catalog-imgblocks').removeClass('two-col');
     });
 
+    // product
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        vertical: true,
+        arrows: false,
+    });
+
+    // prod icons
+    $('.prod-icons .favorite').click(function () {
+        $(this).toggleClass('active');
+    });
+
+
+
 });

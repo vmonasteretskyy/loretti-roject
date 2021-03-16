@@ -496,11 +496,68 @@
         bottom: -13px;
     }
 
+    .cont-textsect__right .section-subtitle,
+    .cont-textsect__right .descr {
+        margin-bottom: 30px;
+    }
+
+    .cont-textsect__right .blackbtn {
+        width: 320px;
+        height: 55px;
+    }
+
+    .contwrap-bottom a {
+        margin-top: 30px;
+    }
+
+    .question-form__head .title {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .question-form__body .inpfield input {
+        height: 46px;
+        padding-left: 15px;
+    }
+
+    .question-form__head {
+        margin-bottom: 50px;
+    }
+
+    .question-form {
+        padding: 70px 50px 30px 50px;
+        max-width: 960px;
+    }
+
+    .contform-sect {
+        padding-bottom: 240px;
+    }
+
+    .addressmap-sect .topsect {
+        padding: 70px 15px 50px 130px;
+    }
+
+    .addressmap-sect .section-subtitle {
+        margin-bottom: 100px;
+    }
+
+    .addressmap-sect .bottsect {
+        padding-top: 100px;
+    }
+
+    .addressmap-sect .bottsect #map {
+        height: 350px;
+    }
 
 
 
 
 
+
+    .cont-textsect,
+    .addressmap-sect {
+        padding-bottom: 120px;
+    }
 
     .events__tablebody .ev,
     .about-section .title,
@@ -537,7 +594,11 @@
     .sort__count .cvar ul li a,
     .pagination ul li a,
     .inform-sect2 .description .descrtext p,
-    .about-section .descr ul li {
+    .about-section .descr ul li,
+    .cont-textsect__right .descr p,
+    .contwrap-bottom p,
+    .question-form__head .descr,
+    .question-form__body .inpfield input {
         font-size: 16px;
     }
 
@@ -685,6 +746,31 @@
     .about-section .descr ul {
         margin-bottom: 20px;
     }
+
+    .contwrap-top {
+        margin-bottom: 20px;
+    }
+
+    .addressmap-sect .topsect ul li,
+    .addressmap-sect .topsect ul li a {
+        font-size: 16px;
+    }
+
+    .addressmap-sect .topsect ul li {
+        padding-left: 35px;
+    }
+
+    .addressmap-sect .topsect,
+    .addressmap-sect .bottsect {
+        padding-left: 80px;
+    }
+
+    .cont-textsect__right {
+        padding-right: 80px;
+    }
+
+
+
 }
 
 @media(max-width:1199.8px) {
@@ -942,6 +1028,40 @@
         max-width: 700px;
     }
 
+    .cont-textsect__right .blackbtn {
+        height: 48px;
+        width: 250px;
+        margin-top: 15px;
+    }
+
+    .cont-textsect__right .section-subtitle,
+    .cont-textsect__right .descr {
+        margin-bottom: 15px;
+    }
+
+    .question-form {
+        max-width: 85%;
+    }
+
+    .question-form {
+        padding: 50px 50px 30px 50px;
+    }
+
+    .question-form__head .title {
+        font-size: 28px;
+    }
+
+    .question-form__head .descr {
+        letter-spacing: 0.1em;
+    }
+
+    .contform-sect {
+        padding-bottom: 200px;
+    }
+
+    .addressmap-sect .bottsect {
+        padding-top: 70px;
+    }
 
 
 
@@ -950,6 +1070,11 @@
 
 
 
+
+    .cont-textsect,
+    .addressmap-sect {
+        padding-bottom: 80px;
+    }
 
     .events__tablebody .ev,
     .about-section .title,
@@ -1535,6 +1660,56 @@
         margin-bottom: 50px;
     }
 
+    .cont-textsect {
+        padding: 0 40px 80px;
+        flex-wrap: wrap;
+    }
+
+    .cont-textsect__right {
+        padding: 0;
+    }
+
+    .cont-textsect__left {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cont-textsect__right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cont-textsect__right .section-subtitle,
+    .cont-textsect__right .descr {
+        margin-bottom: 25px;
+    }
+
+    .addressmap-sect .contmap {
+        position: relative;
+    }
+
+    .addressmap-sect .topsect {
+        padding: 50px 40px;
+    }
+
+    .addressmap-sect .section-subtitle {
+        margin-bottom: 35px;
+    }
+
+    .addressmap-sect .bottsect {
+        padding: 20px 40px 0;
+    }
+
+    .addressmap-sect .soc-contlist {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
 
 }
 
@@ -1705,6 +1880,65 @@
     .about-section.abus {
         margin-bottom: 50px;
     }
+
+    .cont-textsect {
+        padding: 0 15px 50px;
+    }
+
+    .question-form__head {
+        flex-wrap: wrap;
+    }
+
+    .question-form__head .title,
+    .question-form__head .descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .question-form {
+        padding: 30px;
+    }
+
+    .question-form__head .title {
+        margin-bottom: 20px;
+    }
+
+    .question-form__body .inpfield {
+        padding-right: 15px;
+    }
+
+    .question-form__body .btnfield {
+        padding-left: 15px;
+    }
+
+    .question-form__head {
+        margin-bottom: 30px;
+    }
+
+    .contform-sect {
+        padding-bottom: 10px;
+    }
+
+    .contform-sect__wrapp .question-form {
+        position: relative;
+        bottom: initial;
+        top: -50px;
+    }
+
+    .addressmap-sect .topsect {
+        padding: 50px 15px;
+    }
+
+    .addressmap-sect .bottsect #map {
+        height: 300px;
+    }
+
+    .addressmap-sect .bottsect {
+        padding: 20px 15px 0;
+    }
+
+
+
 
 
 }
@@ -2049,11 +2283,61 @@
         padding-bottom: 0;
     }
 
-
     .inform-sect1,
     .inform-sect2 {
         padding-bottom: 30px;
     }
+
+    .cont-textsect__right .section-subtitle,
+    .cont-textsect__right .descr {
+        margin-bottom: 20px;
+    }
+
+    .question-form__body {
+        flex-wrap: wrap;
+    }
+
+    .question-form__body .inpfield {
+        padding-right: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .question-form__body .btnfield {
+        padding-left: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .question-form {
+        padding: 20px;
+    }
+
+    .question-form__head .title {
+        font-size: 24px;
+    }
+
+    .contform-sect__wrapp .question-form {
+        top: -30px;
+    }
+
+    .addressmap-sect .topsect {
+        padding: 30px 15px;
+    }
+
+    .addressmap-sect {
+        padding-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
