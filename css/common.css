@@ -2789,3 +2789,7 @@ font-family: 'Poppins', sans-serif; */
     background: rgba(0, 0, 0, .7);
     border: 1px solid rgb(72 72 72);
 }
+
+.test-color .blackbtn:hover {
+    background: #fff;
+}
