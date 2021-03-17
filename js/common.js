@@ -150,12 +150,53 @@ $(document).ready(function () {
         focusOnSelect: true,
         vertical: true,
         arrows: false,
+        verticalSwiping: true
     });
 
     // prod icons
     $('.prod-icons .favorite').click(function () {
         $(this).toggleClass('active');
     });
+
+    $('.descr-accordeon__sect .title').click(function () {
+        $('.descr-accordeon__sect .descr').not($(this).parents('.descr-accordeon__sect').find('.descr')).slideUp();
+        $(this).parents('.descr-accordeon__sect').find('.descr').slideToggle();
+
+        $('.descr-accordeon__sect').not($(this).parents('.descr-accordeon__sect')).removeClass('open');
+        $(this).parents('.descr-accordeon__sect').toggleClass('open');
+    });
+
+    // Product slider
+
+
+    var $prodslCount = $('.alsolike-sliderwrap .pagingInfo');
+    var $likeslider = $('.alsolike__slider');
+
+    $likeslider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        if (slick.slideCount < 10) {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $prodslCount.text('/ 0' + i);
+        } else {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $prodslCount.text('/' + i);
+        }
+
+    });
+
+    $likeslider.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 600
+    });
+
 
 
 

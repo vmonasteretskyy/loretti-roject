@@ -549,6 +549,92 @@
         height: 350px;
     }
 
+    .product-topsection {
+        padding-top: 40px;
+    }
+
+    .product__descr .collection {
+        font-size: 18px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    .product__descr .name {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    .product__descr .colors .colors__title {
+        margin-bottom: 15px;
+    }
+
+    .color-name {
+        font-size: 14px;
+    }
+
+    .colors__box .color-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .colors__box {
+        margin: 0 15px 5px 15px;
+    }
+
+    .colors__boxes {
+        margin-bottom: 30px;
+    }
+
+    .product__descr .btns-box .blackbtn {
+        width: 255px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .product__descr .btns-box .blackbtn.transparent svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+    }
+
+    .product__descr .btns-box {
+        max-width: 550px;
+    }
+
+    .descr-accordeon__sect .title {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+
+    .descr-accordeon__sect {
+        margin-bottom: 20px;
+    }
+
+    .prod-icons svg {
+        width: 20px;
+    }
+
+    .prod-icons {
+        width: 80px;
+    }
+
+    .littsl .slick-slide img {
+        padding: 8px;
+    }
+
+    .product__slider .littsl {
+        flex: 0 0 150px;
+        max-width: 150px;
+        padding-right: 15px;
+    }
+
+    .littsl .slick-slide {
+        margin-bottom: 5px;
+    }
+
+
+
+
 
 
 
@@ -570,7 +656,8 @@
     .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
     .filter-sidebar>ul>li>span,
     .active-filtbox .filter-title,
-    .active-filters .title {
+    .active-filters .title,
+    .product__descr .colors .colors__title {
         font-size: 18px;
     }
 
@@ -598,7 +685,9 @@
     .cont-textsect__right .descr p,
     .contwrap-bottom p,
     .question-form__head .descr,
-    .question-form__body .inpfield input {
+    .question-form__body .inpfield input,
+    .descr-accordeon__sect .descr p,
+    .descr-accordeon__sect .descr ul li {
         font-size: 16px;
     }
 
