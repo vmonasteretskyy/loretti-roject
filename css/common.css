@@ -2287,20 +2287,39 @@ h1:after {
 .question-form__body {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .question-form__body .inpfield {
-    padding-right: 43px;
     width: 100%;
-    max-width: 56%;
-    flex: 0 0 56%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+}
+
+.question-form__body .inpfield:nth-child(odd) {
+    padding-right: 70px;
+}
+
+.question-form__body .inpfield:nth-child(even) {
+    padding-left: 70px;
 }
 
 .question-form__body .btnfield {
-    padding-left: 43px;
     width: 100%;
-    max-width: 44%;
-    flex: 0 0 44%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.question-form__body .inpfield .sort__tag {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
+}
+
+.question-form__body .inpfield .sort__tag .select-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #28282C;
 }
 
 .question-form__body .inpfield input {
@@ -2782,12 +2801,12 @@ font-family: 'Poppins', sans-serif; */
 
 
 .test-color .header__blackline {
-    background: rgba(0, 0, 0, .7);
+    background: #646464;
 }
 
 .test-color .blackbtn {
-    background: rgba(0, 0, 0, .7);
-    border: 1px solid rgb(72 72 72);
+    background: #646464;
+    border: 1px solid #646464;
 }
 
 .test-color .blackbtn:hover {
