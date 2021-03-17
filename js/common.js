@@ -230,7 +230,14 @@ $(document).ready(function () {
         ]
     });
 
+    // search
+    $('.header__blackline-search span').click(function () {
+        $('.search-wrapper').show();
+    });
 
+    $('.search-wrapper .close').click(function () {
+        $('.search-wrapper').hide();
+    });
 
 
 });
