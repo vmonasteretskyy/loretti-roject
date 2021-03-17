@@ -842,7 +842,7 @@ header.header {
     left: 0;
     top: 0;
     width: 100%;
-    background: #28282C;
+    background: #646464;
     height: 668px;
 }
 
@@ -2388,7 +2388,7 @@ h1:after {
 
 .addressmap-sect .topsect {
     padding: 142px 130px 59px 130px;
-    background: #28282C;
+    background: #646464;
 }
 
 .addressmap-sect .section-subtitle {
@@ -2786,7 +2786,7 @@ h1:after {
 }
 
 .alsolike__slider .slick-arrow.slick-prev {
-    left: 0;
+    left: 15px;
 }
 
 .alsolike__slider .slick-arrow {
@@ -2817,11 +2817,11 @@ h1:after {
     background: #28282C;
     position: absolute;
     top: 48%;
-    transform: translateX(-175px);
-    -webkit-transform: translateX(-175px);
-    -moz-transform: translateX(-175px);
-    -ms-transform: translateX(-175px);
-    -o-transform: translateX(-175px);
+    transform: translateX(-167px);
+    -webkit-transform: translateX(-167px);
+    -moz-transform: translateX(-167px);
+    -ms-transform: translateX(-167px);
+    -o-transform: translateX(-167px);
 }
 
 .alsolike__slider .slick-arrow.slick-next:hover,
