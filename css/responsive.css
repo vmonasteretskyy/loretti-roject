@@ -529,10 +529,6 @@
         max-width: 960px;
     }
 
-    .contform-sect {
-        padding-bottom: 240px;
-    }
-
     .addressmap-sect .topsect {
         padding: 70px 15px 50px 130px;
     }
@@ -632,13 +628,26 @@
         margin-bottom: 5px;
     }
 
+    .question-form__body .inpfield .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+    }
 
+    .question-form__body .inpfield .select-wrapper .select2-container--default .select2-selection--single {
+        height: 46px;
+        padding: 9px 0px;
+    }
 
+    .contform-sect__wrapp .question-form {
+        top: -100px;
+    }
 
+    .question-form__body .inpfield textarea {
+        font-size: 16px;
+    }
 
-
-
-
+    .question-form__body .inpfield .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 15px;
+    }
 
     .cont-textsect,
     .addressmap-sect {
@@ -1144,12 +1153,22 @@
         letter-spacing: 0.1em;
     }
 
-    .contform-sect {
-        padding-bottom: 200px;
-    }
 
     .addressmap-sect .bottsect {
         padding-top: 70px;
+    }
+
+    .question-form__body .inpfield:nth-child(odd) {
+        padding-right: 40px;
+    }
+
+    .question-form__body .inpfield:nth-child(even) {
+        padding-left: 40px;
+    }
+
+    .question-form__body .inpfield textarea {
+        height: 110px;
+        padding: 10px 20px;
     }
 
 
@@ -1177,6 +1196,8 @@
     .events__tablebody .country {
         font-size: 14px;
     }
+
+
 
 
 }
@@ -1218,6 +1239,10 @@
         background-color: #fff;
         color: #28282C;
         font-size: 14px;
+    }
+
+    .question-form__body .inpfield {
+        margin-bottom: 20px;
     }
 }
 
@@ -1794,11 +1819,33 @@
         margin-bottom: 20px;
     }
 
+    .question-form__head {
+        margin-bottom: 30px;
+    }
 
+    .question-form__body .inpfield:nth-child(odd) {
+        padding-right: 20px;
+    }
 
+    .question-form__body .inpfield:nth-child(even) {
+        padding-left: 20px;
+    }
 
+    .question-form__body .inpfield textarea {
+        height: 100px;
+    }
 
+    .question-form__body .btnfield {
+        margin-top: 0;
+    }
 
+    .question-form__body .blackbtn {
+        max-width: 240px;
+    }
+
+    .contform-sect__wrapp .question-form {
+        top: -70px;
+    }
 
 }
 
@@ -2004,9 +2051,6 @@
         margin-bottom: 30px;
     }
 
-    .contform-sect {
-        padding-bottom: 10px;
-    }
 
     .contform-sect__wrapp .question-form {
         position: relative;
@@ -2026,8 +2070,14 @@
         padding: 20px 15px 0;
     }
 
+    .question-form__body .inpfield {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 
-
+    .question-form__body .inpfield {
+        padding: 0 !important;
+    }
 
 
 }
@@ -2419,6 +2469,11 @@
         padding-bottom: 0;
     }
 
+    .question-form__body .inpfield .select-wrapper {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
 
 
 
