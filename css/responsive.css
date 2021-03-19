@@ -111,7 +111,6 @@
     .collections__box-title p {
         font-size: 28px;
         margin-bottom: 20px;
-        /* max-width: calc(100% - 20px); */
     }
 
     .collections__content .col-xl-6:nth-child(2) .col-lg-6:nth-child(1) .col-lg-12:nth-child(1) .collections__box-title,
@@ -685,8 +684,154 @@
         height: 18px;
     }
 
+    .size-popup .title {
+        font-size: 32px;
+        line-height: normal;
+    }
 
+    .size-popup {
+        padding-top: 60px;
+    }
 
+    .size-tabbtns {
+        font-size: 18px;
+    }
+
+    .loginpopup .title {
+        line-height: normal;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .loginpopup button.close {
+        right: 16px;
+        top: 16px;
+    }
+
+    .loginpopup button.close img,
+    .loginpopup button.close svg {
+        width: 18px;
+    }
+
+    .loginpopup .right-sect,
+    .loginpopup .mc-cont .right-sect {
+        padding: 40px 50px;
+    }
+
+    .loginpopup .modal-dialog {
+        max-width: 800px;
+    }
+
+    .loginpopup .leftpic,
+    .loginpopup .mc-reg .leftpic {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .loginpopup form .inpfield input {
+        height: 50px;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .loginpopup .inpfield.check label {
+        font-size: 16px;
+        padding-left: 25px;
+    }
+
+    .loginpopup .inpfield.check label:before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .loginpopup .inpfield.check {
+        margin-top: 20px;
+    }
+
+    .loginpopup .blackbtn.logsubm,
+    .loginpopup .reglink {
+        margin-top: 25px;
+    }
+
+    .or {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .loginpopup .blackbtn.logsubm,
+    .loginpopup .reglink {
+        height: 54px;
+    }
+
+    .loginpopup .descr {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .loginpopup .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .loginpopup .select-wrapper .select2-container--default .select2-selection--single {
+        height: 50px;
+    }
+
+    .row-two .col-md-6:nth-child(odd) {
+        padding-right: 15px;
+    }
+
+    .row-two .col-md-6:nth-child(even) {
+        padding-left: 15px;
+    }
+
+    .loginpopup .mc-cont form .inpfield,
+    .loginpopup .mc-reg form .inpfield {
+        margin-bottom: 14px;
+    }
+
+    .loginpopup form textarea {
+        font-size: 16px;
+        padding: 10px 20px;
+        height: 90px;
+    }
+
+    .loginpopup .mc-cont .blackbtn {
+        height: 54px;
+        max-width: 100%;
+    }
+
+    .regbottbtns {
+        flex-wrap: wrap;
+    }
+
+    .loginpopup .mc-reg .right-sect {
+        padding: 20px 30px 40px 30px;
+    }
+
+    .loginpopup .mc-reg .inpfield.check label,
+    .loginpopup .mc-reg .inpfield.check label a {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .regbottbtns {
+        margin-top: 30px;
+    }
+
+    .regbottbtns .blackbtn {
+        height: 54px;
+        width: 190px;
+        font-size: 14px;
+    }
+
+    .regbottbtns span:not(.blackbtn span) {
+        font-size: 18px;
+    }
+
+    .regbottbtns .blackbtn span:before {
+        width: 20px;
+    }
 
     .cont-textsect,
     .addressmap-sect {
@@ -738,7 +883,6 @@
     .descr-accordeon__sect .descr ul li {
         font-size: 16px;
     }
-
 
     .collections {
         padding: 100px 0 0 0;
@@ -1295,12 +1439,6 @@
         padding-bottom: 65px;
     }
 
-
-
-
-
-
-
     .cont-textsect,
     .addressmap-sect {
         padding-bottom: 80px;
@@ -1318,9 +1456,6 @@
     .events__tablebody .country {
         font-size: 14px;
     }
-
-
-
 
 }
 
@@ -1393,8 +1528,6 @@
     }
 
     .header__rightm {
-        /*display: none;
-        */
         position: fixed;
         right: 0;
         width: 300px;
@@ -1588,7 +1721,6 @@
 
     .collections__content .col-xl-6:nth-child(2) .col-lg-6:nth-child(4) .col-lg-12:nth-child(1) .collections__box-title {
         bottom: 20px;
-
     }
 
     .collections__content .col-xl-6:first-child .col-lg-12:nth-child(4) .collections__box-title {
@@ -1618,7 +1750,6 @@
     .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
         padding-left: 8px;
     }
-
 
     .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
         border-width: 5px 6px 0 6px;
@@ -1981,11 +2112,125 @@
         max-width: 500px;
     }
 
+    .size-popup .title {
+        font-size: 28px;
+    }
 
+    .loginpopup .modal-dialog {
+        max-width: 600px;
+    }
 
+    .loginpopup .title {
+        font-size: 24px;
+    }
 
+    .loginpopup form .inpfield input {
+        height: 40px;
+        font-size: 14px;
+        padding-left: 0;
+    }
 
+    .loginpopup .leftpic,
+    .loginpopup .mc-reg .leftpic {
+        max-width: 250px;
+        flex: 0 0 250px;
+    }
 
+    .loginpopup .leftpic img {
+        object-position: top center;
+    }
+
+    .loginpopup button.close {
+        right: 12px;
+        top: 12px;
+    }
+
+    .loginpopup .right-sect,
+    .loginpopup .mc-cont .right-sect,
+    .loginpopup .mc-cont .right-sect {
+        padding: 40px 30px;
+    }
+
+    .loginpopup .blackbtn.logsubm,
+    .loginpopup .reglink {
+        height: 46px;
+    }
+
+    .loginpopup .inpfield.check label {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .loginpopup .justfield span {
+        font-size: 14px;
+    }
+
+    .or {
+        font-size: 26px;
+        line-height: normal;
+    }
+
+    .loginpopup .blackbtn.logsubm,
+    .loginpopup .reglink {
+        margin-top: 20px;
+    }
+
+    .loginpopup .blackbtn.logsubm {
+        margin-bottom: 15px;
+    }
+
+    .loginpopup .mc-forgotpass .justfield {
+        margin: 0;
+    }
+
+    .loginpopup .descr,
+    .loginpopup .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .loginpopup form textarea {
+        font-size: 14px;
+    }
+
+    .loginpopup .mc-forgotpass .title {
+        line-height: normal;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .loginpopup .select-wrapper .select2-container--default .select2-selection--single {
+        height: 40px;
+    }
+
+    .loginpopup .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 0;
+    }
+
+    .loginpopup .mc-cont .blackbtn {
+        height: 46px;
+        margin-top: 20px;
+    }
+
+    .loginpopup .mc-cont form textarea,
+    .loginpopup .mc-reg form textarea {
+        margin-top: 10px;
+    }
+
+    .regbottbtns .blackbtn {
+        width: 100%;
+    }
+
+    .regbottbtns span:not(.blackbtn span) {
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .regbottbtns .blackbtn {
+        height: 46px;
+    }
+
+    .loginpopup .mc-forgotpass .title {
+        font-size: 24px;
+    }
 
 }
 
@@ -2191,7 +2436,6 @@
         margin-bottom: 30px;
     }
 
-
     .contform-sect__wrapp .question-form {
         position: relative;
         bottom: initial;
@@ -2228,9 +2472,77 @@
         max-width: 450px;
     }
 
+    .size-popup {
+        width: 90%;
+    }
 
+    .tablewrapper {
+        width: 100%;
+        overflow: auto;
+    }
 
+    .tablewrapper table {
+        min-width: 370px;
+    }
 
+    .size-popup {
+        padding: 60px 0;
+    }
+
+    .size-popup .title,
+    .size-tabbtns,
+    .sizepbody {
+        padding: 0 0 0 20px;
+    }
+
+    .close-size img {
+        width: 20px;
+    }
+
+    .close-size {
+        top: 15px;
+        right: 15px;
+    }
+
+    .size-popup .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .loginpopup .modal-dialog {
+        max-width: 550px;
+    }
+
+    .loginpopup .justfield {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .loginpopup .justfield span {
+        margin-bottom: 5px;
+    }
+
+    .loginpopup .justfield span:last-child {
+        margin-bottom: 0;
+    }
+
+    .or {
+        font-size: 22px;
+    }
+
+    .loginpopup .reglink {
+        margin-top: 15px;
+    }
+
+    .loginpopup .select-wrapper {
+        padding: 0;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .loginpopup button.close svg path {
+        fill: #28282C;
+    }
 
 }
 
@@ -2753,8 +3065,27 @@
         overflow: auto;
     }
 
+    .loginpopup .leftpic {
+        display: none;
+    }
 
+    .loginpopup .justfield span {
+        margin-bottom: 0;
+    }
 
+    .events .bottom-navigation {
+        margin-top: 40px;
+    }
+
+    .events__tablebody .ev {
+        font-size: 16px;
+    }
+
+    .events__tablebody .contacts li a,
+    .events__tablebody .date,
+    .events__tablebody .country {
+        font-size: 14px;
+    }
 
 }
 

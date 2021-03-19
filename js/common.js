@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     // main slider
 
-
     var $status = $('.mainslider-section .pagingInfo');
     var $slickElement = $('.mainslider');
 
@@ -62,11 +61,17 @@ $(document).ready(function () {
 
     // About mouse transform
     if ($(window).width() > 1024) {
-        var mouse = { x: 0, y: 0 };
+        var mouse = {
+            x: 0,
+            y: 0
+        };
         window.addEventListener('mousemove', function (e) {
             mouse.x = e.x;
             mouse.y = e.y;
-            $(".mouse-pointer").css({ "left": mouse.x, "top": mouse.y });
+            $(".mouse-pointer").css({
+                "left": mouse.x,
+                "top": mouse.y
+            });
         });
 
 
@@ -140,16 +145,14 @@ $(document).ready(function () {
         arrows: false,
         fade: true,
         asNavFor: '.slider-nav',
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true
-                }
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
             }
-        ]
+        }]
     });
     $('.slider-nav').slick({
         slidesToShow: 3,
@@ -205,28 +208,27 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 600,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 421,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
             }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 421,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
         ]
     });
 
@@ -238,6 +240,99 @@ $(document).ready(function () {
     $('.search-wrapper .close').click(function () {
         $('.search-wrapper').hide();
     });
+
+    // size
+
+    $('.size-tabbtns .in-btn').click(function () {
+        $('.size-tabbtns span').removeClass('active');
+        $(this).addClass('active');
+        $('.sizepbody-tabcont').hide();
+        $('.sizepbody-tabcont.sizepbody-in').show();
+    });
+
+    $('.size-tabbtns .cm-btn').click(function () {
+        $('.size-tabbtns span').removeClass('active');
+        $(this).addClass('active');
+        $('.sizepbody-tabcont').hide();
+        $('.sizepbody-tabcont.sizepbody-cm').show();
+    })
+
+
+    $('.sizeopen').click(function (event) {
+        event.preventDefault();
+        $('.size-popup__wrap').show();
+    });
+    $('.close-size').click(function () {
+        $('.size-popup__wrap').hide();
+    });
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.size-popup').length && !$target.closest('.sizeopen').length) {
+            $('.size-popup__wrap').hide();
+        }
+    });
+
+    // login
+    $(".showpass").click(function () {
+        var input = $('.pass input');
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
+    $('.contact-link').click(function () {
+        $('.mc-log').hide();
+        $('.mc-cont').show();
+    });
+
+
+
+    // log popups
+    $('.lostpass-link').click(function () {
+        $('.mc-gen').hide();
+        $('.mc-forgotpass').show();
+    });
+
+
+    $('.contact-link').click(function () {
+        $('.mc-gen').hide();
+        $('.mc-cont').show();
+    });
+
+    $('.reglink').click(function () {
+        $('.mc-gen').hide();
+        $('.mc-reg').show();
+    });
+
+    $('.log-link').click(function () {
+        $('.mc-gen').hide();
+        $('.mc-log').show();
+    });
+
+
+
+
+
+
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.login-modal-dialog.gdial').length) {
+            $('.mc-gen').hide();
+            $('.mc-log').show();
+        }
+    });
+    $('.loginpopup .close').click(function () {
+        $('.mc-gen').hide();
+        $('.mc-log').show();
+    });
+
+
+
+
+
 
 
 });

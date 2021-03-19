@@ -56,7 +56,7 @@
                             <div class="col-xl-3 col-lg-3">
                                 <div class="header__login">
                                     <div class="header__loginbtn">
-                                        <span>Log in</span>
+                                        <span data-toggle="modal" data-target="#loginModal">Log in</span>
                                     </div>
                                 </div>
                             </div>
@@ -624,6 +624,242 @@
         </div>
     </div>
 
+    <div class="modal fade loginpopup" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-modal-dialog gdial">
+            <div class="modal-content mc-gen mc-log">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/icon/close-search.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="loginsect">
+                        <div class="leftpic">
+                            <img src="img/logpic1.jpg" alt="image">
+                        </div>
+                        <div class="right-sect col">
+                            <form action="">
+                                <p class="title">login</p>
+                                <div class="inpfield">
+                                    <input type="text" placeholder="Username or  email address">
+                                </div>
+                                <div class="inpfield pass">
+                                    <input type="password" placeholder="Password">
+                                    <span class="showpass">
+                                        <img src="img/icon/eye.svg" alt="icon">
+                                    </span>
+                                </div>
+                                <div class="inpfield check">
+                                    <input type="checkbox" id="rememberme">
+                                    <label for="rememberme">Remember me</label>
+                                </div>
+                                <button class="blackbtn logsubm" type="submit"><span>LOG IN</span></button>
+                                <div class="justfield">
+                                    <span class="lostpass-link">Lost your password?</span>
+                                    <span class="contact-link">Contact us</span>
+                                </div>
+                                <p class="or">or</p>
+                                <a href="#" class="blackbtn transparent reglink"><span>REGISTER</span></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content mc-gen mc-cont">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/icon/close-search.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="loginsect">
+                        <div class="leftpic">
+                            <img src="img/logpic2.jpg" alt="image">
+                        </div>
+                        <div class="right-sect col">
+                            <form action="">
+                                <p class="title">CONTACT US</p>
+                                <p class="descr">
+                                    If you have any questions, provide your phone number and we will contact you.
+                                </p>
+                                <div class="row row-two">
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <div class="select-wrapper">
+                                                <select class="custsel country-select">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="email" placeholder="Email*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="tel" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea placeholder="Your message"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="blackbtn"><span>SEND</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content mc-gen mc-reg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 1.32694L22.6731 0L12 10.6731L1.32694 0L0 1.32694L10.6731 12L0 22.6731L1.32694 24L12 13.3269L22.6731 24L24 22.6731L13.3269 12L24 1.32694Z"
+                            fill="#ffffff" />
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="loginsect">
+                        <div class="leftpic">
+                            <img src="img/logpic3.jpg" alt="image">
+                        </div>
+                        <div class="right-sect col">
+                            <form action="">
+                                <p class="title">Register</p>
+                                <div class="row row-two">
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Bridal shop name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Website">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Your first name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Last name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="email" placeholder="E-mail*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Phone*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Address*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Town*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Zip Code*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <div class="select-wrapper">
+                                                <select class="custsel country-select">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="VAT number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield">
+                                            <input type="text" placeholder="Company name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield check">
+                                            <input type="checkbox" id="privacy-check">
+                                            <label for="privacy-check">I accept the <a href="#" target="_balank">Privacy
+                                                    Policy</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inpfield check">
+                                            <input type="checkbox" id="terms-check">
+                                            <label for="terms-check">I accept the <a href="#" target="_blank">Terms of
+                                                    Use</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regbottbtns">
+                                    <button type="submit" class="blackbtn"><span>REGISTER</span></button>
+                                    <span>or</span>
+                                    <a href="#" class="blackbtn transparent log-link"><span>LOG IN</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content mc-gen mc-forgotpass">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/icon/close-search.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="loginsect">
+                        <div class="leftpic">
+                            <img src="img/logpic1.jpg" alt="image">
+                        </div>
+                        <div class="right-sect col">
+                            <form action="">
+                                <p class="title">Lost your password?
+                                </p>
+                                <div class="inpfield">
+                                    <input type="text" placeholder="Email address">
+                                </div>
+                                <button class="blackbtn logsubm" type="submit"><span>Send</span></button>
+                                <div class="justfield">
+                                    <span class="log-link">Log In</span>
+                                    <span class="contact-link">Contact us</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -636,7 +872,7 @@
             $(function () {
                 var isoCountries = [{
                         id: 'all',
-                        text: 'All',
+                        text: 'Country',
                         descr: ''
                     },
                     {
