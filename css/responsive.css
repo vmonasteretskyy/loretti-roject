@@ -825,7 +825,76 @@
         font-size: 14px;
     }
 
-    .regbottbtns span:not(.blackbtn span) {
+    .findstore__list ul li {
+        margin-left: 60px;
+    }
+
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single {
+        height: 60px;
+        padding-top: 0;
+    }
+
+    .findstore__filter-title,
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .myloc-btn {
+        padding-left: 20px;
+    }
+
+    .findstore__search,
+    .findstore__myloc {
+        margin-bottom: 40px;
+    }
+
+    .findstore__filter-title {
+        letter-spacing: 0.1em;
+    }
+
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+        right: 20px;
+    }
+
+    .findstore__shop .title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .findstore__shop ul li {
+        margin-bottom: 20px;
+    }
+
+    .direction__box p {
+        font-size: 14px;
+    }
+
+    .findstore__filter {
+        max-width: 31%;
+        flex: 0 0 31%;
+        padding-right: 30px;
+    }
+
+    .findstore__mapsect {
+        max-width: 69%;
+        flex: 0 0 69%;
+    }
+
+    .findstore__shops {
+        height: 640px;
+    }
+
+    .map-wrapper {
+        height: 650px;
+    }
+
+
+
+
+
+
+
+    .regbottbtns span:not(.blackbtn span),
+    .findstore__list ul li a,
+    .findstore__filter-title,
+    .myloc-btn {
         font-size: 18px;
     }
 
@@ -1059,6 +1128,29 @@
     .product__slider .bigsl {
         max-width: calc(100% - 120px);
     }
+
+    .findstore__shops-wrap {
+        padding: 25px 20px;
+    }
+
+    .findstore__shop .direction {
+        max-width: 100%;
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .findstore-section {
+        padding-left: 80px;
+    }
+
+    .findstore__list {
+        padding-right: 80px;
+    }
+
+
+
+
 
 }
 
@@ -1444,6 +1536,24 @@
         padding-bottom: 80px;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .events__tablebody .ev,
     .about-section .title,
     .about-section .title a {
@@ -1501,6 +1611,42 @@
     .question-form__body .inpfield {
         margin-bottom: 20px;
     }
+
+    .findstore__filter {
+        max-width: 33%;
+        flex: 0 0 33%;
+        padding-right: 20px;
+    }
+
+    .findstore__mapsect {
+        max-width: 67%;
+        flex: 0 0 67%;
+    }
+
+    .findstore__filter-title,
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .myloc-btn {
+        padding-left: 0;
+    }
+
+    .myloc-btn img {
+        margin-right: 10px;
+    }
+
+    .findstore__shop ul li {
+        margin-bottom: 15px;
+    }
+
+    .findstore__shop .title {
+        line-height: normal;
+        font-size: 20px;
+    }
+
+
+
+
+
+
 }
 
 @media(max-width:991.8px) {
@@ -2232,6 +2378,58 @@
         font-size: 24px;
     }
 
+    .findstore-section {
+        padding-left: 40px;
+    }
+
+    .findstore__shop ul li {
+        padding-left: 23px;
+    }
+
+    .findstore__filter {
+        max-width: 38%;
+        flex: 0 0 38%;
+    }
+
+    .findstore__mapsect {
+        max-width: 62%;
+        flex: 0 0 62%;
+    }
+
+    .findstore__list {
+        padding-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    .regbottbtns span:not(.blackbtn span),
+    .findstore__list ul li a,
+    .findstore__filter-title,
+    .myloc-btn {
+        font-size: 16px;
+    }
+
+    .findstore__list ul li.active a:after {
+        width: 6px;
+        height: 6px;
+        bottom: -8px;
+    }
+
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .findstore__filter .select2-results__option {
+        font-size: 16px;
+    }
+
+    .findstore__list ul li {
+        margin-left: 40px;
+    }
+
+
+
+
+
+
+
+
 }
 
 @media(max-width:767.8px) {
@@ -2543,6 +2741,43 @@
     .loginpopup button.close svg path {
         fill: #28282C;
     }
+
+    .findstore__filter {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .findstore__shop .direction {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .direction__box p {
+        font-size: 16px;
+    }
+
+    .findstore__shops {
+        height: 415px;
+        margin-bottom: 30px;
+    }
+
+    .findstore__mapsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .findstore-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .findstore__list,
+    .findstore__filter {
+        padding-right: 0;
+    }
+
+
+
 
 }
 
@@ -3087,6 +3322,60 @@
         font-size: 14px;
     }
 
+    .findstore__filter .select-wrapper:first-child,
+    .findstore__filter .select-wrapper:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .findstore__filter .select-wrapper .select2-container--default .select2-selection--single {
+        height: 50px;
+    }
+
+    .findstore__search,
+    .findstore__myloc {
+        margin-bottom: 30px;
+    }
+
+    .findstore__shops-wrap {
+        padding: 15px;
+    }
+
+    .direction__box p {
+        font-size: 14px;
+    }
+
+    .findstore__shop .direction {
+        max-width: 75px;
+        flex: 0 0 75px;
+        justify-content: flex-end;
+    }
+
+    .findstore__shop ul li {
+        font-size: 14px;
+    }
+
+    .findstore__shop ul li:after {
+        top: 1px;
+    }
+
+    .direction__box img {
+        margin-bottom: 0;
+    }
+
+    .map-wrapper {
+        height: 500px;
+    }
+
+
+
+
+
+
+
+
 }
 
 @media(max-width:360.8px) {
@@ -3112,6 +3401,33 @@
     .search-form img {
         max-width: 270px;
     }
+
+    .findstore__shop ul li.loc:after,
+    .findstore__shop ul li.phone:after {
+        width: 12px;
+        height: 17px;
+    }
+
+    .findstore__shop ul li.site:after {
+        width: 17px;
+        height: 17px;
+    }
+
+    .findstore__shop ul li:after {
+        top: 3px;
+    }
+
+    .findstore__shop ul li {
+        padding-left: 21px;
+    }
+
+    .direction__box img {
+        max-width: 30px;
+    }
+
+
+
+
 }
 
 

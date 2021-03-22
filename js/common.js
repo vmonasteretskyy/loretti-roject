@@ -96,6 +96,11 @@ $(document).ready(function () {
         dropdownCssClass: "catalog-dropdown",
     });
 
+    $(".custom-select").select2({
+        minimumResultsForSearch: -1,
+        dropdownCssClass: "catalog-dropdown",
+    });
+
     // menu
     var newDiv = document.createElement('div');
     newDiv.setAttribute('class', 'menubg');
