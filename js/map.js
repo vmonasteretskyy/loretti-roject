@@ -54,8 +54,7 @@ function initMap() {
         styles: stylemap,
     });
 
-
-    // my local
+    // my location
     const locationButton = document.getElementById("button-loc");
     locationButton.addEventListener("click", () => {
         if (navigator.geolocation) {
@@ -70,6 +69,10 @@ function initMap() {
                     var marker = new google.maps.Marker({
                         position: pos,
                         map: map,
+                        icon: {
+                            url: "img/mapmarker.png",
+                            scaledSize: new google.maps.Size(24, 32)
+                        },
                     });
                 },
             );
@@ -127,12 +130,16 @@ function initMap() {
 
 
     // TEST MARKERS
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const labels = "";
 
     const markers = locations.map((location, i) => {
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
+            icon: {
+                url: "img/mapmarker.png",
+                scaledSize: new google.maps.Size(24, 32)
+            },
         });
     });
     // Add a marker clusterer to manage the markers.
@@ -205,3 +212,4 @@ const locations = [
     { lat: 52.2539811, lng: 9.9992756 },
     { lat: 52.6222289, lng: 13.4672432 },
 ];
+
