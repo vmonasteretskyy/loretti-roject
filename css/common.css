@@ -3641,6 +3641,80 @@ input[type=password]::-webkit-credentials-auto-fill-button {
     outline: none;
 }
 
+.findstore__mapsect .title {
+    font-size: 26px;
+    line-height: 35px;
+    color: #28282C;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.findstore__mapsect .gm-style-iw.gm-style-iw-c {
+    width: 320px;
+    padding: 24px 30px !important;
+}
+
+.findstore__mapsect ul {
+    margin-bottom: 0;
+}
+
+.findstore__mapsect ul li {
+    color: rgba(40, 40, 44, 0.8);
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    padding-left: 27px;
+    position: relative;
+}
+
+.findstore__mapsect ul li.loc:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 21px;
+    background-image: url('../img/icon/locic.svg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.findstore__mapsect ul li.phone:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 21px;
+    background-image: url('../img/icon/phoneic.svg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.findstore__mapsect ul li:last-child {
+    margin-bottom: 0;
+}
+
+.findstore__mapsect .gm-style .gm-style-iw-d {
+    padding: 0 !important;
+}
+
+.findstore__mapsect .gm-style-iw button img {
+    margin: 0 !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.findstore__mapsect .gm-style-iw button {
+    right: 0 !important;
+    top: 0 !important;
+}
+
 
 
 

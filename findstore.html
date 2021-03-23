@@ -325,12 +325,712 @@
     <script src="js/common.js"></script>
     <!-- map -->
 
-    <script async="" defer=""
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuqtG8XhmKQPGoYpFi9dqZmhZTDWGCxE0&amp;callback=initMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApj8qSzyO4DqXeQtFQPKI4mi6p-MBwlpo&libraries=places">
+    </script>
     </script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script src="js/map.js"></script>
 
+    <script>
+        function initMap() {
+            // map options
+            var stylemap = [{
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#87cbdb"
+                    }]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                            "color": "#b8cb93"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.1
+                        }
+                    ]
+                },
+            ];
+            var options = {
+                zoom: 5,
+                center: {
+                    lat: 46.8302317,
+                    lng: 12.2224921
+                },
+                styles: stylemap,
+            }
+            const labels = "";
+
+            mcOptions = {
+                styles: [{
+                        textColor: 'white',
+                        height: 57,
+                        url: "img/cluster.png",
+                        width: 57
+                    },
+                    {
+                        textColor: 'white',
+                        height: 57,
+                        url: "img/cluster.png",
+                        width: 57
+                    },
+                    {
+                        textColor: 'white',
+                        height: 57,
+                        url: "img/cluster.png",
+                        width: 57
+                    },
+                    {
+                        textColor: 'white',
+                        height: 57,
+                        url: "img/cluster.png",
+                        width: 57
+                    },
+                    {
+                        textColor: 'white',
+                        height: 57,
+                        url: "img/cluster.png",
+                        width: 57
+                    }
+                ]
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), options);
+            // Add a marker clusterer to manage the markers.
+
+            //Add marker
+            var markers = [
+
+                {
+                    coords: {
+                        lat: 49.8225468,
+                        lng: 24.1133993
+                    },
+                    content: `
+                        <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 49.8431884,
+                        lng: 24.0248358
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 49.2355752,
+                        lng: 23.883286
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.4194646,
+                        lng: 18.9927268
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.4799668,
+                        lng: 19.0507386
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.5264903,
+                        lng: 18.9879709
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.1786219,
+                        lng: 18.3942966
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.1152602,
+                        lng: 18.3633095
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 48.856977,
+                        lng: 2.3472257
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 48.7543441,
+                        lng: 2.3215783
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 48.7802642,
+                        lng: 1.9642106
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 48.4532931,
+                        lng: 2.5041298
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.1380951,
+                        lng: -1.5821305
+                    },
+                    content: `
+                        <p class="title">Amelya</p>
+                        <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 43.2949381,
+                        lng: 5.3581403
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 47.1824894,
+                        lng: -1.5391631
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 43.351406,
+                        lng: 5.351537
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 51.5185603,
+                        lng: -0.1156527
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 51.4925911,
+                        lng: -0.086658
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 50.9786252,
+                        lng: 10.3120153
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.5168731,
+                        lng: 13.3776729
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.5092491,
+                        lng: 13.3505341
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.4973137,
+                        lng: 13.4149179
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.5632244,
+                        lng: 13.4197571
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.5492239,
+                        lng: 13.0597026
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.3209228,
+                        lng: 9.7925675
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.2539811,
+                        lng: 9.9992756
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    coords: {
+                        lat: 52.6222289,
+                        lng: 13.4672432
+                    },
+                    content: `
+                    <p class="title">LILLY</p>
+                        <div class="row no-gutters">
+                            <ul class="col">
+                                <li class="loc">
+                                    Győri út 16-18<br>
+                                    1123 Budapest
+                                </li>
+                                <li class="phone">Phone: +36 30 277 0071</li>
+                            </ul>
+                        </div>
+                    `
+                },
+            ];
+
+            // Loop through markers
+            var gmarkers = [];
+            for (var i = 0; i < markers.length; i++) {
+                gmarkers.push(addMarker(markers[i]));
+                jQuery('#markers').append('<div class="findstore__shop" data-markerid="' + i + '" > ' + markers[i]
+                    .content + '</div>');
+
+            }
+
+            jQuery('.findstore__shop').on('click', function (e) {
+                var idc = $(this).data('markerid');
+                var gmMap = markers[idc].coords;
+                map.setZoom(12);
+                map.setCenter(gmMap)
+            });
+
+            //Add MArker function
+            function addMarker(props, i) {
+                var marker = new google.maps.Marker({
+                    position: props.coords,
+                    map: map,
+                    icon: {
+                        url: "img/mapmarker.png",
+                        scaledSize: new google.maps.Size(24, 32)
+                    },
+                });
+
+                //Check content
+                if (props.content) {
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: props.content
+                    });
+                    marker.addListener('click', function () {
+                        infoWindow.open(map, marker);
+                    });
+                }
+                return marker;
+            }
+
+
+            //init clusterer with your options
+            var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
+
+
+            // my local
+            const locationButton = document.getElementById("button-loc");
+            locationButton.addEventListener("click", () => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude,
+                            };
+                            map.setZoom(12);
+                            map.setCenter(pos);
+                            var marker = new google.maps.Marker({
+                                position: pos,
+                                map: map,
+                                icon: {
+                                    url: "img/mapmarker.png",
+                                    scaledSize: new google.maps.Size(24, 32)
+                                },
+                            });
+                        },
+                    );
+                }
+            });
+
+
+            // COUNTRY TEST
+            function newLocation(newLat, newLng) {
+                map.setCenter({
+                    lat: newLat,
+                    lng: newLng,
+                });
+
+            }
+            $('#country-select').change(function () {
+                if ($('#country-select option:selected').val() == 'All') {
+                    newLocation(46.8302317, 12.2224921);
+                    map.setZoom(4);
+                    // $('#type').val('0');
+
+                }
+                if ($('#country-select option:selected').val() == 'Ukraine') {
+                    // $('#type').val('0');
+                    newLocation(48.317773, 30.9366666);
+                    map.setZoom(6.5);
+
+
+                }
+                if ($('#country-select option:selected').val() == 'Slovakia') {
+                    // $('#type').val('0');
+                    newLocation(48.668859, 18.5786351);
+                    map.setZoom(6.5);
+
+                }
+                if ($('#country-select option:selected').val() == 'France') {
+                    // $('#type').val('0');
+                    newLocation(46.1390888, 2.4336308);
+                    map.setZoom(6.5);
+                }
+                if ($('#country-select option:selected').val() == 'Ireland') {
+                    // $('#type').val('0');
+                    newLocation(53.161955, -8.010161);
+                    map.setZoom(7);
+                }
+
+
+            });
+
+        }
+        google.maps.event.addDomListener(window, 'load', initMap)
+    </script>
 
 
 
