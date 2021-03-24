@@ -1642,8 +1642,16 @@
         font-size: 20px;
     }
 
+    .findstore__mapsect .title {
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
 
-
+    .findstore__mapsect .gm-style-iw.gm-style-iw-c {
+        width: 280px;
+        padding: 15px 10px 10px 15px !important;
+    }
 
 
 
@@ -3369,10 +3377,22 @@
         height: 500px;
     }
 
+    .findstore__mapsect .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
+    .findstore__mapsect ul li.loc:after,
+    .findstore__mapsect ul li.phone:after {
+        width: 13px;
+        height: 18px;
+        top: 1px;
+    }
 
-
-
+    .findstore__mapsect ul li {
+        padding-left: 20px;
+        font-size: 14px;
+    }
 
 
 

@@ -3496,7 +3496,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
 }
 
 .findstore__shops-wrap {
-    padding: 35px 32px;
+    padding: 0 32px 35px 32px;
     background: #F1F1F1;
     overflow: auto;
     height: 100%;
@@ -3509,9 +3509,6 @@ input[type=password]::-webkit-credentials-auto-fill-button {
     cursor: pointer;
 }
 
-.findstore__shop:first-child {
-    padding-top: 0;
-}
 
 .findstore__shop:last-child {
     border-bottom: none;
@@ -3715,10 +3712,18 @@ input[type=password]::-webkit-credentials-auto-fill-button {
     top: 0 !important;
 }
 
+.no-items {
+    padding-top: 30px;
+    font-size: 20px;
+}
 
+.findstore__mapsect .direction {
+    display: none;
+}
 
-
-
+.findstore__shops-wrap {
+    padding-top: 0 !important;
+}
 
 
 
