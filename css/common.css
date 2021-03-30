@@ -3725,6 +3725,29 @@ input[type=password]::-webkit-credentials-auto-fill-button {
     padding-top: 0 !important;
 }
 
+.product__slider video {
+    width: 100%;
+}
+
+.video.slick-slide {
+    position: relative;
+}
+
+.video.slick-slide:after {
+    content: '';
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    background-image: url('../img/play-ic.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 
